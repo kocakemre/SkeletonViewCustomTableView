@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F538503329A7E762007C0B1C /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = F538503229A7E762007C0B1C /* SkeletonView */; };
+		F538503629A7E8A4007C0B1C /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F538503529A7E8A4007C0B1C /* MovieData.swift */; };
 		F5B4099129A55399001B59A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4099029A55399001B59A4 /* AppDelegate.swift */; };
 		F5B4099329A55399001B59A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4099229A55399001B59A4 /* SceneDelegate.swift */; };
-		F5B4099529A55399001B59A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4099429A55399001B59A4 /* ViewController.swift */; };
-		F5B4099829A55399001B59A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B4099629A55399001B59A4 /* Main.storyboard */; };
+		F5B4099529A55399001B59A4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B4099429A55399001B59A4 /* HomeVC.swift */; };
 		F5B4099A29A5539C001B59A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B4099929A5539C001B59A4 /* Assets.xcassets */; };
 		F5B4099D29A5539C001B59A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B4099B29A5539C001B59A4 /* LaunchScreen.storyboard */; };
+		F5B409A929A55CD3001B59A4 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B409A829A55CD3001B59A4 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F538503529A7E8A4007C0B1C /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		F5B4098D29A55399001B59A4 /* SkeletonViewCustomTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonViewCustomTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B4099029A55399001B59A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B4099229A55399001B59A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5B4099429A55399001B59A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5B4099729A55399001B59A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5B4099429A55399001B59A4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F5B4099929A5539C001B59A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B4099C29A5539C001B59A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5B4099E29A5539C001B59A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B409A829A55CD3001B59A4 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +34,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F538503329A7E762007C0B1C /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F538503429A7E848007C0B1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F538503529A7E8A4007C0B1C /* MovieData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F5B4098429A55399001B59A4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +68,48 @@
 		F5B4098F29A55399001B59A4 /* SkeletonViewCustomTableView */ = {
 			isa = PBXGroup;
 			children = (
+				F5B409A429A553A3001B59A4 /* Resources */,
+				F538503429A7E848007C0B1C /* Model */,
+				F5B409A529A553EA001B59A4 /* Scene */,
+			);
+			path = SkeletonViewCustomTableView;
+			sourceTree = "<group>";
+		};
+		F5B409A429A553A3001B59A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F5B4099029A55399001B59A4 /* AppDelegate.swift */,
 				F5B4099229A55399001B59A4 /* SceneDelegate.swift */,
-				F5B4099429A55399001B59A4 /* ViewController.swift */,
-				F5B4099629A55399001B59A4 /* Main.storyboard */,
 				F5B4099929A5539C001B59A4 /* Assets.xcassets */,
 				F5B4099B29A5539C001B59A4 /* LaunchScreen.storyboard */,
 				F5B4099E29A5539C001B59A4 /* Info.plist */,
 			);
-			path = SkeletonViewCustomTableView;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5B409A529A553EA001B59A4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				F5B409A729A55CA3001B59A4 /* Cell */,
+				F5B409A629A553F3001B59A4 /* Controller */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		F5B409A629A553F3001B59A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5B4099429A55399001B59A4 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5B409A729A55CA3001B59A4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5B409A829A55CD3001B59A4 /* CustomCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = SkeletonViewCustomTableView;
+			packageProductDependencies = (
+				F538503229A7E762007C0B1C /* SkeletonView */,
+			);
 			productName = SkeletonViewCustomTableView;
 			productReference = F5B4098D29A55399001B59A4 /* SkeletonViewCustomTableView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = F5B4098429A55399001B59A4;
+			packageReferences = (
+				F538503129A7E762007C0B1C /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = F5B4098E29A55399001B59A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +178,6 @@
 			files = (
 				F5B4099D29A5539C001B59A4 /* LaunchScreen.storyboard in Resources */,
 				F5B4099A29A5539C001B59A4 /* Assets.xcassets in Resources */,
-				F5B4099829A55399001B59A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B4099529A55399001B59A4 /* ViewController.swift in Sources */,
+				F5B4099529A55399001B59A4 /* HomeVC.swift in Sources */,
 				F5B4099129A55399001B59A4 /* AppDelegate.swift in Sources */,
+				F5B409A929A55CD3001B59A4 /* CustomCell.swift in Sources */,
+				F538503629A7E8A4007C0B1C /* MovieData.swift in Sources */,
 				F5B4099329A55399001B59A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5B4099629A55399001B59A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5B4099729A55399001B59A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5B4099B29A5539C001B59A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +332,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SkeletonViewCustomTableView/Info.plist;
+				INFOPLIST_FILE = SkeletonViewCustomTableView/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +358,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SkeletonViewCustomTableView/Info.plist;
+				INFOPLIST_FILE = SkeletonViewCustomTableView/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F538503129A7E762007C0B1C /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F538503229A7E762007C0B1C /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F538503129A7E762007C0B1C /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5B4098529A55399001B59A4 /* Project object */;
 }
