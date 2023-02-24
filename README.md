@@ -2,3 +2,4 @@
 - Written in Swift
 - Using "skeleton view" in interface
 - Skeleton view library used.
+- Programmatic UI design
